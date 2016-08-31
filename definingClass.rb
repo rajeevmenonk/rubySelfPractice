@@ -29,6 +29,9 @@ class PersonClass
   def getNumberInit
     puts @@numberOfPersons
   end
+  def PersonClass.testFun
+    puts 1
+  end
 end
 
 personOne = PersonClass.new('PersonOne', 1)
@@ -41,4 +44,5 @@ personOne.getName
 personOne.getNumberInit
 puts personTwo.returnName
 personThree.getNumber
+PersonClass.testFun
 # A class employee needs to be inherit from the class PersonClass.
